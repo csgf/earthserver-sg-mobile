@@ -1,0 +1,15 @@
+".container": {
+	backgroundColor: "white"
+},
+"ActivityIndicator[platform=ios]" : {
+	style: Titanium.UI.iPhone.ActivityIndicatorStyle.DARK,
+	//borderWidth: 1,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+},
+"ActivityIndicator[platform=android]" : {
+	style: Ti.UI.ActivityIndicatorStyle.BIG_DARK,
+	//borderWidth: 1,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}

@@ -1,0 +1,22 @@
+<Alloy> 
+	<Window id="showPngWin" backgroundColor="#fff" title="MACC RAQ" >
+		<ScrollView layout="vertical" top="0dp" bottom="0dp" width="100%" showVerticalScrollIndicator="true">
+			<Label id="titleLbl" />
+			<ImageView id="imagesPng" />
+			<View>
+				<Button id="pauseStartBtn" onClick="pauseStart" />
+				<Slider id="sliderImages" enabled="false" onChange="changeSliderImages" />
+			</View>				
+			<View>
+				<ImageView id="speedIV" />
+				<Label id="speedLbl">Frame speed: 100ms</Label>
+				<Button id="lessBtn" onClick="lessSpeed" zIndex="10" />
+				<Button id="moreBtn" onClick="moreSpeed" zIndex="10" />
+			</View>		
+			<View>
+				<ImageView id="opacityIV" />
+				<Slider id="sliderOpacity" onChange="changeSliderOpacity" />
+			</View>
+		</ScrollView>
+    </Window>
+</Alloy>

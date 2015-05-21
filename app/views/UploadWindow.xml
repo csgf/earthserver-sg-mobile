@@ -1,0 +1,21 @@
+<Alloy>
+	<Window title="Upload" class="container">
+		<TableView id="uploadTv">
+			<TableViewRow><TextField id="titleTxt" hintText="Title"></TextField></TableViewRow>	
+			<TableViewRow><TextArea id="descTxt" value="Description"></TextArea></TableViewRow>
+			<TableViewRow><TextField id="kwTxt" hintText="Keywords"></TextField></TableViewRow>
+		</TableView>
+		
+		<!-- <TextField id="fileTxt"></TextField> -->
+		<View layout="horizontal" height="50dp">
+			<Button class="button" title="Load from Gallery" onClick="loadFromGallery"></Button>
+			<Button class="button" title="Load from Camera" onClick="loadFromCamera"></Button>
+		</View>
+		
+		<ProgressBar id="progress"></ProgressBar>
+		<View>
+			<ImageView id="iv" image="/appicon.png"></ImageView> 
+			<Button id="uploadBtn" title=" Start Upload" onClick="startUpload"></Button>
+		</View>	
+	</Window>
+</Alloy>

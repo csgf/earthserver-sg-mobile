@@ -1,0 +1,5 @@
+<Alloy> 
+	<Window id="wcsMetadataWin" title="L('WcsMetadata_win_title')" class="meeoWin" >
+		<TableView id="metadataTv" class="meeoTableView" />			
+    </Window>
+</Alloy>

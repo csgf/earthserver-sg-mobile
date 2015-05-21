@@ -1,0 +1,32 @@
+<Alloy> 
+	<Window title="Envelope" class="meeoWin" >
+		<TableView class="meeoTableView">
+			<TableViewSection headerTitle="L('WcsCoverageEnvelope_section1_title')">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageEnvelope_row1_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="srsName" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageEnvelope_row2_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="srsDomain" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageEnvelope_row3_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="axisLabel" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageEnvelope_row4_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="axisUoms" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageEnvelope_row5_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="lowerCorner" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageEnvelope_row6_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="upperCorner" />
+				</TableViewRow>												
+			</TableViewSection>			
+		</TableView>
+    </Window>
+</Alloy>

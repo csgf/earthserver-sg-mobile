@@ -1,0 +1,50 @@
+".rgbTableViewRow" : {
+	height : Ti.UI.SIZE,
+	backgroundColor : "#fff",
+	selectionStyle : Ti.UI.iPhone.TableViewCellSelectionStyle.NONE
+},
+".rgbBandRow" : {
+	font : {fontSize:"14sp"},
+	color : "#000",
+	left : "5dp",
+	selected : false
+},
+".red" : {
+	right : "105dp",
+	width : "30dp",
+	height : "30dp",
+	borderRadius : 15,
+	backgroundColor : "#c00000",
+	font : {fontSize:"20sp", fontWeight:"bold"},
+	color : "#fff",
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+".green" : {
+	right : "60dp",
+	width : "30dp",
+	height : "30dp",
+	borderRadius : 15,
+	backgroundColor : "#008000",
+	font : {fontSize:"20sp", fontWeight:"bold"},
+	color : "#fff",
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+".blue" : {
+	right : "15dp",
+	width : "30dp",
+	height : "30dp",
+	borderRadius : 15,
+	backgroundColor : "#0000a0",
+	font : {fontSize:"20sp", fontWeight:"bold"},
+	color : "#fff",
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+".rgbValueRow" : {
+	right : "15dp",
+	font : {fontSize:"16sp", fontWeight:"bold"}
+},
+".rgbTitleRow" : {
+	font : {fontSize:"14sp", fontWeight:"bold"},
+	color : "#000",
+	left : "5dp"
+}

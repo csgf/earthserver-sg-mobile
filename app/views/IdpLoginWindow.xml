@@ -1,0 +1,6 @@
+<Alloy>
+	<Window class="container" >
+		<ActivityIndicator id="activityIndicator" message="Loading..." visible="true"/>
+		<WebView id="wv" onBeforeload="hideWv" ></WebView>
+	</Window>
+</Alloy>

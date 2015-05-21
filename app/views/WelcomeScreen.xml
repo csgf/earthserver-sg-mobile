@@ -1,0 +1,29 @@
+<Alloy>
+	<Window class="container">
+		<View platform="ios" id="topView" backgroundColor="#e0e0e0" height="25dp" layout="composite" width="100%">
+			<Button height="25dp" width="50dp" right="5dp" onClick="signIn">Close</Button>
+		</View>
+		<ImageView id="welcomeImg" image="/logo-earthserver.png" ></ImageView>		
+		<ScrollableView id="scrollableView" >
+			<View id="pag1">
+				<Label id="title">Welcome to the EarthServer Science Gateway Mobile</Label>
+				<Label id="desc">This app allows users to run on a mobile appliance the scientific applications contained in the Science Gateway of the EarthServer Project.</Label>
+				<Label id="subdesc">For more information on the EarthServer Science Gateway, visit</Label>
+				<Button id="gotoESsg" backgroundImage="/ESSGBtn.png" width="120dp" height="29dp" onClick="gotoESprojectSG"/>
+				<Label>For more information on the EarthServer project, visit:</Label>
+				<Button id="gotoESproject" backgroundImage="/ESinfoBtn.png" width="120dp" height="29dp" onClick="gotoESproject"/>
+			</View>
+			<View id="pag2">
+				<Label>The access to the EarthServer Science Gateway requires federated credentials issued by an Identity Provider. If the organisation you belong to has an Identity Provider registered in an official Identity Federation, click on Sign In button below and select your federation and provider.</Label>
+				<Button id="signInBtn" backgroundImage="/signInBtn.png" width="47dp" height="40dp"  onClick="signIn"/>
+				<Label>Otherwise you can get federated credentials registering to the open Identity Provider which belongs to the GrIDP federation</Label>
+				<Button id="registerToGrIDP" backgroundImage="/registerBtn.png" width="100dp" height="23dp"  onClick="register"/>
+			</View>
+		</ScrollableView>
+		<View id="welcomeSwitchView">
+			<Switch id="welcomeSwitch" onChange="dismissWelcomeScreen"/>
+			<Label id="switchLabel">Do not show this welcome page again</Label>
+		</View>
+
+	</Window>
+</Alloy>

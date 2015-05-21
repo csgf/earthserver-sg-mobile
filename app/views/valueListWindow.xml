@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container">
+		<ActivityIndicator id="activityIndicator" message="Loading..." visible="false"/>
+		<Label id="valuesTableTitle" platform="android" text="Choose value" />
+		<TableView id="valuesTable" onClick="setValue"></TableView>
+		<Label platform="android" text="Done" onClick="closeWindow"/>
+	</Window>
+</Alloy>

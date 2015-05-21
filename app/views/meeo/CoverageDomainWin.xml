@@ -1,0 +1,36 @@
+<Alloy> 
+	<Window title="Domain set" class="meeoWin" >
+		<TableView class="meeoTableView">
+			<TableViewSection headerTitle="L('WcsCoverageDomain_section1_title')">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageDomain_row1_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="dimension" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageDomain_row2_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="axisLabel" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageDomain_row3_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="lowerLimit" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageDomain_row4_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="upperLimit" />
+				</TableViewRow>
+			</TableViewSection>	
+			<TableViewSection id="sectionOffsets" headerTitle="L('WcsCoverageDomain_section2_title')">	
+			</TableViewSection>			
+			<TableViewSection headerTitle="L('WcsCoverageDomain_section3_title')">							
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageDomain_row7_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="srsName" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageDomain_row8_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="position" />
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
+    </Window>
+</Alloy>

@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container" title="Choose an IdP">
+		<TableView id="idpsTableView" onClick="openIdpLoginWindow"></TableView>>
+	</Window>
+</Alloy>

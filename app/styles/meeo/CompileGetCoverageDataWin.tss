@@ -1,0 +1,21 @@
+"ActivityIndicator" : {
+	font : {
+		fontSize : "26dp",
+		fontWeight : 'bold'
+	},
+	color : "#fff",	
+	message : "Loading...",
+	visible : false
+},
+".moreLessBtn" : {
+	height:"30dp",
+	width:"30dp",
+	borderWidth:"1",
+	borderRadius:"5",
+	borderColor:"#000",
+	color:"#000",
+	font : {
+		fontSize : "20sp",
+		fontWeight : 'bold'
+	},		
+}

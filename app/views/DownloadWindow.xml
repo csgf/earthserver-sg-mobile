@@ -1,0 +1,18 @@
+<Alloy>
+	<Collection src="Demo"/>
+	<Window title="Download" class="container">
+		<RightNavButton>
+			<Button title="Logout" id="logout" onClick="logout"/>
+		</RightNavButton>
+		<LeftNavButton>
+			<Button id="username"></Button>
+		</LeftNavButton>
+		<TableView dataCollection="Demo" onClick="openDetail">
+			<TableViewRow hasChild="true">
+				<ImageView image="{Thumbnail}"/>
+				<Label id="title" text="{Title}"/>
+				<Label id="desc" text="{Description}"/>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

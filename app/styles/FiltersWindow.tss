@@ -1,0 +1,44 @@
+".container": {
+	backgroundColor: "white"
+},
+/*"#filterList": {
+	bottom: 0
+},*/
+"#filters[platform =ios]" : {
+	style : "Titanium.UI.iPhone.TableViewStyle.GROUPED"
+},
+"#pickerView[platform=ios]": {
+	height:251,
+	bottom:-251,
+},
+"#pickerView[platform=android]": {
+	height:200,
+	width : 250,
+	backgroundColor:"#282828",
+	visible : false
+},
+"Toolbar[platform=ios]": {
+	top: 0
+},
+"Label[platform=android]": {
+	backgroundColor : "#282828",
+	borderColor: "#343434",
+	borderWidth : 1,
+	width : 126,
+	height : "100%",
+	color : "#fff",
+	bottom : -1,
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#pickerViewTitle":  {
+	backgroundColor : "#282828",
+	borderColor: "#32abd8",
+	borderWidth : 2,
+	top : -2,
+	left : -2,
+	height : 50,
+	width : 254,
+	color : "#32abd8",
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font : {fontSize : "22sp"}
+}

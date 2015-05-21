@@ -1,0 +1,79 @@
+"#usarnameLbl": {
+	color: "#000",
+	font: {
+		fontSize: "12sp"
+	},
+	left : "10dp",
+	width : "60dp"
+},
+"#username": {
+	color: "#666666",
+	font: {
+		fontWeight: "bold",
+		fontSize: "12sp"
+	},
+	left : "75dp"
+},
+"#typesTableView": {
+	bottom: "44dp"
+},
+"#esaMerisTable": {
+	top: 0,
+	bottom : 0,	
+	scrollable : false
+},
+"#esaMerisWindow": {
+	top: 0,
+	backgroundColor: "white",
+	//fullscreen: true,
+	//statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
+},
+"#mainWindow": {	
+	backgroundColor: "white"	
+},
+"#bgsIV[formFactor=handheld]" : {
+	width : "190dp",
+	height : "60dp"
+},
+"#meoIV[formFactor=handheld]" : {
+	width : "147dp",
+	height : "60dp"
+},
+"#esaIV[formFactor=handheld]" : {
+	width : "166dp",
+	height : "60dp"	
+},
+"#wxsIV[formFactor=handheld]" : {
+	width : "177dp",
+	height : "60dp"	
+},
+"#bgsIV[formFactor=tablet]" : {
+	width : "380dp",
+	height : "120dp"	
+},
+"#meoIV[formFactor=tablet]" : {
+	width : "293dp",
+	height : "120dp"	
+},
+"#esaIV[formFactor=tablet]" : {
+	width : "332dp",
+	height : "120dp"	
+},
+"#wxsIV[formFactor=tablet]" : {
+	width : "354dp",
+	height : "120dp"	
+},
+".unlock" : {
+	image : "/images/unlock-icon.png",
+	left : "5dp",
+	width : "40dp",
+	height : "40dp",
+	zIndex : 1
+},
+".lock" : {
+	image : "/images/lock-icon.png",
+	left : "5dp",
+	width : "40dp",
+	height : "40dp",
+	zIndex : 1
+}

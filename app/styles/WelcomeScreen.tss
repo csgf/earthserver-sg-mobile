@@ -1,0 +1,69 @@
+".container[platform=ios]": {
+	backgroundColor: "white",
+	layout: "vertical",
+	modal : true
+},
+".container[platform=android]": {
+	backgroundColor: "white",
+	layout: "vertical"
+},
+"#scrollableView": {
+	showPagingControl: "true",
+	height: "300",
+	//overlayEnabled: true,
+	//pagingControlAlpha: 0.3,
+	pagingControlColor: "gray"
+},
+"#welcomeImg": {
+	top : "5dp",
+	left : "10%",
+	right : "10%",
+	height: "20%"
+},
+"View": {
+	layout: "vertical",
+	width: "96%"
+	//borderWidth: 1	
+}
+"#title": {
+	top: "1%",
+	font: {
+		fontWeight: "bold",
+		fontSize: "16sp"
+	},
+	textAlign: "center"
+},
+"Label": {
+	top: "5%",
+	font: {
+		fontSize: "13sp"
+	},
+	color : "#000",
+	left : "5dp",
+	right : "5dp",
+	textAlign : "center"
+},
+"Button": {
+	top: "2%",
+	color : "#000",
+	height : "50dp"
+},
+"#signInBtn" : {
+	height: "50dp"
+},
+"#registerToGrIDP" : {
+	height: "50dp"
+},
+"#welcomeSwitchView" : {
+	height: "40dp",
+	layout: "composite",
+	width : "100%"
+},
+"#welcomeSwitch" : {
+	right: "5dp"
+}, 
+"#switchLabel": {
+	right: "75dp",
+	height : "40dp",
+	textAlign : "right"
+}

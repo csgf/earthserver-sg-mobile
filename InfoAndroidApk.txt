@@ -1,0 +1,11 @@
+The first versions of the app have been signed with the native tools of Eclipse.
+Titanium uses a different algorithm for the signature, then to be able to sign and upload the apk on PlayStore you have to follow the following steps: 
+
+- Create a build from Titanium: Package > Android App Store, and select the keystore
+- Over the apk for the production, it will create the file ../build/android/bin/app-unsigned.apk
+- From the terminal, you have to sign the file with the command:
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ..path../infn-ct.keystore ..path../app-unsigned.apk infn-ct
+- Enter the password of the keystore
+- To publish the signed apk on playstore, you need to make a zipalign of the signed apk from the terminal with the following code:
+zipalign -f -v 4 ..path../app-unsigned.apk ..path../app-unsigned_zipaligned.apk
+- Now you can upload the apk on PlayStore :)

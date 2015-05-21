@@ -1,0 +1,31 @@
+<Alloy> 
+	<Window id="DescribeCoverageWin" title="Describe Coverage" class="meeoWin" >
+		<TableView id="describeCoverageTv" class="meeoTableView">
+			<TableViewSection headerTitle="L('WcsDescribeCoverage_section1_title')">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsDescribeCoverage_row1_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="coverageId" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTiSizeTitleRow" text="L('WcsDescribeCoverage_row2_title')" />
+					<Label class="meeoTiSizeDescriptionRow" id="coverageType" />
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection headerTitle="L('WcsDescribeCoverage_section2_title')">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" onClick="showCoverageEnvelope" >
+					<Label class="meeoOnlyTitleRow" text="L('WcsDescribeCoverage_row3_title')" />
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection headerTitle="L('WcsDescribeCoverage_section3_title')">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" onClick="showCoverageDomain" >
+					<Label class="meeoOnlyTitleRow" text="L('WcsDescribeCoverage_row4_title')" />
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection headerTitle="L('WcsDescribeCoverage_section4_title')">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" onClick="showCoverageRange" >
+					<Label class="meeoOnlyTitleRow" text="L('WcsDescribeCoverage_row5_title')" />
+				</TableViewRow>
+			</TableViewSection>			
+		</TableView>
+    </Window>
+</Alloy>

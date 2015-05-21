@@ -1,0 +1,19 @@
+<Alloy>
+	<Window class="container" title="Credits">		
+		<WebView id="wv" visible="true"/>
+		<TableView id="tv" onClick="openInfoWin">
+			<TableViewRow class="tvr" text="BGS info" name="/BGS.html" hasChild="true">
+				<Label class="meeoOnlyTitleRow" text="BGS info" />
+			</TableViewRow>	
+			<TableViewRow class="tvr" text="MEEO info" name="/MEEO.html" hasChild="true">
+				<Label class="meeoOnlyTitleRow" text="MEEO info" />
+			</TableViewRow>	
+			<TableViewRow class="tvr" text="WxS info" name="/WXS.html" hasChild="true">
+				<Label class="meeoOnlyTitleRow" text="WxS info"/>
+			</TableViewRow>	
+			<TableViewRow class="tvr" text="MERIS info" name="/MERIS.html" hasChild="true">
+				<Label class="meeoOnlyTitleRow" text="MERIS info" />
+			</TableViewRow>			
+		</TableView>
+	</Window>
+</Alloy>

@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id="replicaWindow" class="container">
+		<View ns="Alloy.Globals.Map" id="mapview" onClick="downloadReplica"></View>
+	</Window>
+</Alloy>

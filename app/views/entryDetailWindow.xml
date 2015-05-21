@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container" id="entryDetailWindow">
+		<RightNavButton platform="ios" >
+			<Button id="downloadEntry" title="Download" onClick="downloadEntry"></Button>
+		</RightNavButton>
+		
+		<TableView id="details">
+			<HeaderView>
+				<ImageView id="thumb"></ImageView>
+			</HeaderView>
+		</TableView>>
+	</Window>
+</Alloy>

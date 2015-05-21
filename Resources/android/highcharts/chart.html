@@ -1,0 +1,229 @@
+<html lang="it">
+<head>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+</script>
+<script src="highcharts.js"></script>
+<!--<script src="exporting.js"></script>-->
+<script type="text/javascript">
+
+var createChart = function(chartData){
+	
+	/*var chartData = {
+		coordinates : "x(10,10), y(20,20)",
+		d4 : "d4(0)",
+		dateRange : "01/03/2014 - 05/03/2014",
+		coverageId : "Coverage di Prova",
+		tupleValues : [218000,243388,242975,227302,212468,205969,196107,194478,180920,174817,160322,151785,154731,160670,160259,161444,173589,188670,198930,198676,191436,185849,177831,171632,165681,160935,156926,154579,160563,171178,168710,181121,203307,212345,208337,198364,192403,202836,197452,183921,178570,180470,185931,192741,198466,206826,212027,207672,198509,207366,268471,300981,290319,292254,311896,334616,320746,299548,273164,255064,269353,274308,276868,277709,269665,264236,260279.99999999997,250847,237181,229729,225119,218643,222399,204892,197689,191991,192700,189734,191669,213684,229880,230314,197132,180214,189092,184455,180797,178136,177477,183493,186975,187098,182203,178681,178033,177243,176394]
+		startDate : [2014,01,24]
+	};*/
+	
+	
+	//Ti.API.info(chartData);	
+	chartData = JSON.parse(chartData);
+	//Ti.API.info(JSON.stringify(chartData));
+	
+	Ti.API.info(chartData.tupleValues);
+	Ti.API.info(typeof chartData.tupleValues);
+	Ti.API.info(chartData.tupleValues.length);
+	
+	
+	(function($){ // encapsulate jQuery
+	
+	$(function () {
+		$('#container').highcharts({
+	     chart: {
+	           type : 'area',
+	           zoomType: 'x,y',
+	           spacingRight: 20
+	        },
+	    
+	        xAxis: {
+	            type: 'datetime'
+	        },
+	        
+	        tooltip: {
+	            xDateFormat: '%Y-%m-%d' + " : " + "%H:00",
+	            shared: true
+	        },
+	        
+	        plotOptions: {
+	            series: {
+	                pointStart: Date.UTC(chartData.startDate[0], chartData.startDate[1], chartData.startDate[2]),
+	                pointInterval: 3600 * 1000
+	            }
+	        },
+	            title: {
+	                text: 'MEEO'
+	            },
+	            subtitle: {
+	                text: chartData.coordinates + "<br>" + chartData.dateRange //'<a href="http://thebulletin.metapress.com/content/c4120650912x74k7/fulltext.pdf">'+'10/03/2014 - 15/03/2014</a>'
+	            },
+	           /* xAxis: {
+	                labels: {
+	                    formatter: function() {
+	                        return this.value; // clean, unformatted number for year
+	                    }
+	                },
+	                type: 'datetime'
+	            },*/
+	            yAxis: {
+	                title: {
+	                    text: chartData.yAxis
+	                },
+	                labels: {
+	                    formatter: function() {
+	                        return this.value / 1000; // +'k';
+	                    }
+	                }
+	            },
+	            tooltip: {
+	                pointFormat: '{series.name}<br>'+chartData.yAxis+' value: <b>{point.y:,.0f}</b>',//</b><br/>warheads in {point.x}',
+		            xDateFormat: '%Y-%m-%d' + " " + "%H:00",
+		            shared: true
+	            },
+	            plotOptions: {
+	                series: {
+	            		pointStart: Date.UTC(chartData.startDate[0], chartData.startDate[1], chartData.startDate[2]),
+		                pointInterval: /*24 **/ 3600 * 1000
+		            },
+	                area: {
+	                    marker: {
+	                        enabled: true,
+	                        symbol: 'circle',
+	                        radius: 2,
+	                        states: {
+	                            hover: {
+	                                enabled: true
+	                            }
+	                        }
+	                    }
+	                }
+	            },
+	            series: [{
+	                name: chartData.coverageId,
+	                data: chartData.tupleValues
+	            }, /*{
+	                name: '',
+	                data: []
+	            }*/]
+	        });
+	    });
+	    
+	
+	})(jQuery);
+};
+//createChart();
+</script>
+
+<script type="text/javascript">			
+/**
+ * Grid theme for Highcharts JS
+ * @author Torstein Honsi
+ */
+
+Highcharts.theme = {
+   colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'],
+   chart: {
+      backgroundColor: {
+         linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+         stops: [
+            [0, 'rgb(255, 255, 255)'],
+            [1, 'rgb(240, 240, 255)']
+         ]
+      },
+      borderWidth: 0,
+      plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+      plotShadow: true,
+      plotBorderWidth: 1
+   },
+   title: {
+      style: {
+         color: '#000',
+         font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
+      }
+   },
+   subtitle: {
+      style: {
+         color: '#666666',
+         font: 'bold 12px "Trebuchet MS", Verdana, sans-serif'
+      }
+   },
+   xAxis: {
+      gridLineWidth: 1,
+      lineColor: '#000',
+      tickColor: '#000',
+      labels: {
+         style: {
+            color: '#000',
+            font: '11px Trebuchet MS, Verdana, sans-serif'
+         }
+      },
+      title: {
+         style: {
+            color: '#333',
+            fontWeight: 'bold',
+            fontSize: '12px',
+            fontFamily: 'Trebuchet MS, Verdana, sans-serif'
+
+         }
+      }
+   },
+   yAxis: {
+      minorTickInterval: 'auto',
+      lineColor: '#000',
+      lineWidth: 1,
+      tickWidth: 1,
+      tickColor: '#000',
+      labels: {
+         style: {
+            color: '#000',
+            font: '11px Trebuchet MS, Verdana, sans-serif'
+         }
+      },
+      title: {
+         style: {
+            color: '#333',
+            fontWeight: 'bold',
+            fontSize: '12px',
+            fontFamily: 'Trebuchet MS, Verdana, sans-serif'
+         }
+      }
+   },
+   legend: {
+      itemStyle: {
+         font: '9pt Trebuchet MS, Verdana, sans-serif',
+         color: 'black'
+
+      },
+      itemHoverStyle: {
+         color: '#039'
+      },
+      itemHiddenStyle: {
+         color: 'gray'
+      }
+   },
+   labels: {
+      style: {
+         color: '#99b'
+      }
+   },
+
+   navigation: {
+      buttonOptions: {
+         theme: {
+            stroke: '#CCCCCC'
+         }
+      }
+   }
+};
+
+// Apply the theme
+var highchartsOptions = Highcharts.setOptions(Highcharts.theme);						
+</script>
+<body>
+	<div id="container" style="height:100%; width:100%; margin: 5 5 10 5";></div>
+</body>
+</html>
+</head>

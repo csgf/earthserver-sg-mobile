@@ -1,0 +1,22 @@
+"#chartWin[platform=ios]" : {
+	orientationModes : [Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT, Ti.UI.PORTRAIT]
+},
+"#chartWin[platform=android]" : {
+	orientationModes : [Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT]
+},
+"#wv[platform=ios]" : {
+	top : "0dp",
+	bottom : "0dp",
+	left : "-5dp",
+	right : "0dp",
+	scalesPageToFit : true
+},
+"#wv[platform=android]" : {
+	top : "0dp",
+	bottom : "0dp",
+	left : "-5dp",
+	right : "0dp",
+	enableZoomControls : false,
+	scalesPageToFit : true,
+	overScrollMode : Titanium.UI.Android.OVER_SCROLL_NEVER
+}

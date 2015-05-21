@@ -1,0 +1,10 @@
+<Alloy>
+	<TabGroup>
+		<Tab id="downloads" title="Downloads" icon="/download.png">
+			<Require src="DownloadWindow" id="downloadWin"></Require>
+		</Tab>
+		<Tab title="Upload" icon="/upload.png">
+			<Require src="UploadWindow"></Require>
+		</Tab>
+	</TabGroup>
+</Alloy>

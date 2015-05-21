@@ -1,0 +1,55 @@
+<Alloy> 
+	<Window id="compileGetCoverageDataWin" class="meeoWin" title="Compiles data" >
+		<RightNavButton platform="ios" >
+			<Button onClick="getCoverage">Send</Button>
+		</RightNavButton>
+		<TableView id="tv" class="meeoTableView" onClick="checkRgbRow">
+			<TableViewSection headerTitle="Coverage info">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" onClick="showDescribeCoverage">
+					<Label class="meeoTitleRow" id="coverageName" />
+					<Label class="meeoDescriptionRow">Show describeCoverage info</Label>
+				</TableViewRow>			
+			</TableViewSection>
+			<TableViewSection headerTitle="Request parameters">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >SRS name</Label>
+					<Label class="meeoDescriptionRow" id="srsname" />		
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Eastings (m BNG)</Label>
+					<Label class="meeoDescriptionRow" id="longitude" />		
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Northings (m BNG)</Label>
+					<Label class="meeoDescriptionRow" id="latitude" />		
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Size (pixel)</Label>
+					<Label class="meeoDescriptionRow" id="size" />
+					<Slider id="sliderSize" onChange="changeSliderSize" left="100dp" right="15dp" min="0" max="200" />			
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" rgbrow="true">
+					<Label class="meeoTitleRow" >Red</Label>
+					<Label class="meeoDescriptionRow" id="red" >b1</Label>		
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" rgbrow="true">
+					<Label class="meeoTitleRow" >Green</Label>
+					<Label class="meeoDescriptionRow" id="green" >b2</Label>		
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" rgbrow="true">
+					<Label class="meeoTitleRow" >Blue</Label>
+					<Label class="meeoDescriptionRow" id="blue" >b3</Label>						
+				</TableViewRow>
+			</TableViewSection>								
+		</TableView>
+		<View id="loadingView" backgroundColor="#000" width="100%" height="100%" opacity="0.4" visible="false" zIndex="10"/>
+		<ActivityIndicator id="activityIndicatorView" platform="ios" style="Titanium.UI.iPhone.ActivityIndicatorStyle.BIG" zIndex="11" />
+		<ActivityIndicator id="activityIndicatorView" platform="android" style="Ti.UI.ActivityIndicatorStyle.BIG" zIndex="11" />
+
+		<View id="loadingForecastView" backgroundColor="#000" width="300dp" height="200dp" visible="false" zIndex="10" borderRadius="15" >
+			<ActivityIndicator id="activityIndicatorForecast" platform="ios" style="Titanium.UI.iPhone.ActivityIndicatorStyle.BIG" zIndex="11" top="10dp" />
+			<ActivityIndicator id="activityIndicatorForecast" platform="android" style="Ti.UI.ActivityIndicatorStyle.BIG" zIndex="11" top="0dp" />			
+		</View>				
+
+    </Window>
+</Alloy>

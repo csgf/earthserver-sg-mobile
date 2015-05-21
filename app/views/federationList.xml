@@ -1,0 +1,15 @@
+<Alloy>
+	<Window title = "Choose a Federation" class="container" > <!--onAndroid:back="androidBack" >-->
+		<LeftNavButton platform="ios">
+			<Button onClick="closeWindow" title="Close" />
+		</LeftNavButton>
+		<RightNavButton platform="ios">
+			<Button onClick="openWelcomeScreen" systemButton="Titanium.UI.iPhone.SystemButton.INFO_LIGHT"/>
+		</RightNavButton>
+		<Menu platform="android">
+			 <MenuItem title="Info" onClick="openWelcomeScreen" icon="Ti.Android.R.drawable.ic_menu_info_details" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+		</Menu>
+		<TableView id="federationsTableView" onClick="openIdpList">		
+		</TableView>
+	</Window>
+</Alloy>

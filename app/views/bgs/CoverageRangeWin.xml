@@ -1,0 +1,6 @@
+<Alloy> 
+	<Window title="Range type" class="meeoWin" >
+		<TableView id="rangeTv" class="meeoTableView">
+		</TableView>
+    </Window>
+</Alloy>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>	
+    <string name="string_yes">YES</string>
+    <string name="string_no">NO</string>
+    
+    <string name="app_win_title">Coverage</string>
+    <string name="app_settings_button">Settings</string>
+    <string name="app_label">Nothing to show so far!</string>
+    <!--<string name="app_win1_title">Settings</string> -->
+    <string name="settings_win_title">Settings</string>
+    <string name="settings_section1_title">Overlays</string>
+    <string name="settings_row1_title">Overlays settings</string>
+    <string name="settings_row1_description">Set overlays order and opacity</string>
+    <string name="settings_row2_title">Add coverage</string>
+    <string name="settings_row2_description">Add a WCS coverage to the overlays</string>
+    <string name="settings_row3_title">Add layer</string>
+    <string name="settings_row3_description">Add a WMS layer to the overlays</string>
+    <string name="settings_section2_title">Servers</string>
+    <string name="settings_row4_title">Server capabilities</string>
+    <string name="settings_row4_description">Show server capabilities</string>
+    <string name="settings_row5_title">Add Server</string>
+    <string name="settings_row5_description">Add a WCS or WMS server</string>
+    <string name="settings_section3_title">Queries Metadata</string>
+    <string name="settings_row6_title">Coverage description</string>
+    <string name="settings_row6_description">Show WCS coverage metadata</string>
+    <string name="settings_row7_title">Layer description</string>
+    <string name="settings_row7_description">Show a WMS layer metadata</string>
+    <string name="AvailableServers_win_title">Available servers</string>
+    <string name="AvailableServers_last_row_title">Add a new server</string>
+    <string name="AddServer_win_title">Add server</string>
+    <string name="AddServer_button_title">Save</string>
+    <string name="AddServer_row1_title">SERVICE</string>
+    <string name="AddServer_row2_title">NAME</string>
+    <string name="AddServer_row3_title">URL</string>
+    <string name="AddServer_OkDialog_title">Server added</string>
+    <string name="AddServer_OkDialog_message">New %s server added.</string>
+    <string name="AddServer_existServer_title">Server already added</string>
+    <string name="AddServer_existServer_message">Already exists a server with the same url (%s).</string>
+    <string name="AddServer_ErrorDialog_title">Error</string>
+    <string name="AddServer_ErrorDialog_message">There was an error retrieving the remote data.\nImpossible to add the server.\nTry again.</string>
+    <string name="AddNewServer_win_title">Add a new server</string>
+    <string name="AddNewServer_button_title">Save</string>
+    <string name="AddNewServer_row1_title">SERVICE</string>
+    <string name="AddNewServer_row2_title">NAME</string>
+    <string name="AddNewServer_row3_title">URL</string>
+    <string name="AddNewServer_row2_hintText">Favorite server name</string>
+    <string name="AddNewServer_row3_hintText">Server url</string>
+    <string name="AddNewServer_OkDialog_title">Server added</string>
+    <string name="AddNewServer_OkDialog_message">New %s server added.</string>
+    <string name="AddNewServer_ErrorDialog_title">Error</string>
+    <string name="AddNewServer_ErrorDialog_message">There was an error retrieving the remote data.\nImpossible to add the server.\nTry again.</string>
+    <string name="AddNewServer_OptionDialog_title">Choose service type</string>
+    <string name="AddNewServer_EmptyFields_message">Name or URL missed.</string>
+    <string name="AddNewServer_EmptyFields_title">Fields missed</string>
+   
+   	<string name="ServerCapabilities_win_title">Capabilities</string>
+ 	<string name="ServerCapabilities_section1_title">WCS Servers</string>
+    <string name="ServerCapabilities_section2_title">WMS Servers</string>
+    <string name="ServerCapabilities_button_title">Delete all added servers</string>
+    <string name="ServerCapabilities_message">All of servers deleted</string>
+    
+    <string name="ViewXml_win_title">XML</string>
+    <string name="ViewXml_wait_message">Please wait...</string>
+    <string name="WcsServer_section1_title">Service Metadata</string>
+    <string name="WcsServer_section2_title">Coverages</string>
+    <string name="WcsServer_row1_title">View Server Metadata</string>
+
+    <string name="WmsServer_section1_title">Service Metadata</string>
+    <string name="WmsServer_section2_title">Layers</string>
+    <string name="WmsServer_row1_title">View Server Metadata</string>
+
+    <string name="WcsMetadata_win_title">Metadata</string>
+    <string name="WcsMetadata_section1_title">XML Server Response</string>
+    <string name="WcsMetadata_row1_title">View XML</string>
+    <string name="WcsMetadata_section2_title">Service Identification</string>
+    <string name="WcsMetadata_row2_title">Title</string>
+    <string name="WcsMetadata_row3_title">Abstract</string>
+    <string name="WcsMetadata_row4_title">Keywords</string>
+    <string name="WcsMetadata_row5_title">Service Type</string>
+    <string name="WcsMetadata_row6_title">Service Version</string>
+    <string name="WcsMetadata_row7_title">Profiles</string>
+    <string name="WcsMetadata_row8_title">Fees</string>
+    <string name="WcsMetadata_row9_title">Access Constraints</string>
+    <string name="WcsMetadata_section3_title">Service Provider</string>
+    <string name="WcsMetadata_row10_title">Provider name</string>
+    <string name="WcsMetadata_row11_title">Provider site</string>
+    <string name="WcsMetadata_row12_title">Individual name</string>
+    <string name="WcsMetadata_row13_title">Position</string>
+    <string name="WcsMetadata_row14_title">Role</string>
+    <string name="WcsMetadata_row15_title">Telephone</string>
+    <string name="WcsMetadata_row16_title">Facsimile</string>
+    <string name="WcsMetadata_row17_title">Address</string>
+    <string name="WcsMetadata_row18_title">City</string>
+    <string name="WcsMetadata_row19_title">State or Province</string>
+    <string name="WcsMetadata_row20_title">Post code</string>
+    <string name="WcsMetadata_row21_title">Country</string>
+    <string name="WcsMetadata_row22_title">e-Mail</string>
+    <string name="WcsMetadata_row23_title">Online Resource</string>
+    <string name="WcsMetadata_row24_title">Hours of service</string>
+    <string name="WcsMetadata_row25_title">Contact Instructions</string>
+
+    <string name="WcsServerList_win_title">WCS servers</string>
+
+    <string name="WmsServerList_win_title">WMS servers</string>
+
+    <string name="WcsCoverageMetadata_win_title">Coverage metadata</string>
+    <string name="WcsCoverageMetadata_row1_title">From getCapabilities</string>
+    <string name="WcsCoverageMetadata_row1_description">Show coverage metadata included in getCapabilities contents section</string>
+    <string name="WcsCoverageMetadata_row2_title">From describeCoverage</string>
+    <string name="WcsCoverageMetadata_row2_description">Show coverage metadata returned by describeCoverage operation</string>
+<!--
+	<string name="WcsCoverageMetadata_OkDialog_title">DescribeCoverage response</string>
+    <string name="WcsCoverageMetadata_OkDialog_message">Coverage metadata is ready</string>
+-->
+    <string name="WcsDescribeCoverage_win_title">Describe Coverage</string>
+    <string name="WcsDescribeCoverage_section1_title">Coverage ID and Type</string>
+    <string name="WcsDescribeCoverage_row1_title">Id</string>
+    <string name="WcsDescribeCoverage_row2_title">Type</string>
+    <string name="WcsDescribeCoverage_section2_title">Envelope</string>
+    <string name="WcsDescribeCoverage_row3_title">Show envelope</string>
+    <string name="WcsDescribeCoverage_section3_title">Coverage domain</string>
+    <string name="WcsDescribeCoverage_row4_title">Show coverage domain</string>
+    <string name="WcsDescribeCoverage_section4_title">Coverage range</string>
+    <string name="WcsDescribeCoverage_row5_title">Show coverage range</string>
+    <string name="WcsDescribeCoverage_message">Coverage downloaded</string>
+
+    <string name="WcsCoverageEnvelope_win_title">Envelope</string>
+    <string name="WcsCoverageEnvelope_section1_title">Spatial envelope</string>
+    <string name="WcsCoverageEnvelope_row1_title">SRS name</string>
+    <string name="WcsCoverageEnvelope_row2_title">SRS dimension</string>
+    <string name="WcsCoverageEnvelope_row3_title">Axis labels</string>
+    <string name="WcsCoverageEnvelope_row4_title">Axis UOMs</string>
+    <string name="WcsCoverageEnvelope_row5_title">Lower corner</string>
+    <string name="WcsCoverageEnvelope_row6_title">Upper corner</string>
+  
+    <string name="WcsCoverageDomain_win_title">Domain set</string>
+    <string name="WcsCoverageDomain_section1_title">Grid envelope</string>
+    <string name="WcsCoverageDomain_row1_title">Dimension</string>
+    <string name="WcsCoverageDomain_row2_title">Axis labels</string>
+    <string name="WcsCoverageDomain_row3_title">Lower limit</string>
+    <string name="WcsCoverageDomain_row4_title">Upper limit</string>
+    <string name="WcsCoverageDomain_section2_title">Offsets</string>
+    <string name="WcsCoverageDomain_row5_title">SRS name</string>
+    <string name="WcsCoverageDomain_row6_title">Offset</string>
+    <string name="WcsCoverageDomain_section3_title">Origin</string>
+    <string name="WcsCoverageDomain_row7_title">SRS name</string>
+    <string name="WcsCoverageDomain_row8_title">Position</string>
+
+    <string name="WcsCoverageRange_win_title">Range type</string>
+    <string name="WcsCoverageRange_section1_title">Bands</string>
+    <string name="WcsCoverageRange_row1_title">Band-%s</string>
+<!--    <string name="WcsCoverageRange_row2_title">Band-%s</string>
+    <string name="WcsCoverageRange_row3_title">Band-%s</string>
+-->
+
+    <string name="WcsCoverageList_win_title">Coverages</string>
+    <string name="WcsCoverageList_section1_title">Coverages</string>
+    
+    <string name="WcsCoverageList2_win_title">Coverages list</string>
+  
+    <string name="WcsGetCoverage_win_title">Get coverage</string>
+    <string name="WcsGetCoverage_button_title">Send</string>
+    <string name="WcsGetCoverage_section1_title">Bounding box</string>
+    <string name="WcsGetCoverage_row1_title">CRS</string>
+    <string name="WcsGetCoverage_row2_title">Min latitude</string>
+    <string name="WcsGetCoverage_row3_title">Min longitude</string>
+    <string name="WcsGetCoverage_row4_title">Max latitude</string>
+    <string name="WcsGetCoverage_row5_title">Max longitude</string>
+    <string name="WcsGetCoverage_section2_title">Range subsetting</string>
+    <string name="WcsGetCoverage_section3_title">Coverage image</string>
+    <string name="WcsGetCoverage_row6_title">Width</string>
+    <string name="WcsGetCoverage_row6_hintText">Not specified yet</string>
+    <string name="WcsGetCoverage_row7_title">Height</string>
+    <string name="WcsGetCoverage_row7_hintText">Not specified yet</string>
+    <string name="WcsGetCoverage_message">Coverage downloaded</string>
+    <string name="WcsGetCoverage_ErrorMessage">Insert the correct image size</string>
+
+    <string name="CoverageInfo_win_title">Coverage information</string>
+    <string name="CoverageInfo_section1_title">Coverage ID and Type</string>
+    <string name="CoverageInfo_row1_title">Id</string>
+    <string name="CoverageInfo_row2_title">Type</string>
+    <string name="CoverageInfo_section2_title">Bounding box</string>
+
+    <string name="LayerMetadata_win_title">Layer Metadata</string>
+    <string name="LayerMetadata_section1_title">Layer attributes</string>
+    <string name="LayerMetadata_row1_title">Queryable</string>
+    <string name="LayerMetadata_row2_title">Opaque</string>
+    <string name="LayerMetadata_row3_title">No Subsets</string>
+    <string name="LayerMetadata_row4_title">Cascaded</string>
+    <string name="LayerMetadata_row5_title">Fixed width</string>
+    <string name="LayerMetadata_row6_title">Fixed height</string>
+    <string name="LayerMetadata_section2_title">Layer info</string>
+    <string name="LayerMetadata_row7_title">Name</string>
+    <string name="LayerMetadata_row8_title">Title</string>
+    <string name="LayerMetadata_row9_title">Abstract</string>
+    <string name="LayerMetadata_row10_title">Keywords</string>
+    <string name="LayerMetadata_row11_title">Avalaible CRSes</string>
+    <string name="LayerMetadata_row12_title">Min scale denominator</string>
+    <string name="LayerMetadata_row13_title">Max scale denominator</string>    
+    <string name="LayerMetadata_section3_title">Covered area</string>
+    <string name="LayerMetadata_row14_title">West Longitude</string>
+    <string name="LayerMetadata_row15_title">East Longitude</string>
+    <string name="LayerMetadata_row16_title">South Latitude</string>
+    <string name="LayerMetadata_row17_title">North Latitude</string>
+    <string name="LayerMetadata_section4_title">Geographic dimensions</string>   
+    <string name="LayerMetadata_section5_title">Other dimensions</string>
+    <string name="LayerMetadata_section6_title">Styles</string>
+       
+    <string name="WmsBoundingBox_section1_title">Bounding Box</string>
+    <string name="WmsBoundingBox_row1_title">Minimum X</string>
+    <string name="WmsBoundingBox_row2_title">Minimum Y</string>
+    <string name="WmsBoundingBox_row3_title">Maximunm X</string>
+    <string name="WmsBoundingBox_row4_title">Maximunm Y</string>
+    <string name="WmsBoundingBox_section2_title">Resolution</string>
+    <string name="WmsBoundingBox_row5_title">Resolution X</string>
+    <string name="WmsBoundingBox_row6_title">Resolution Y</string>
+    
+    <string name="WmsOtherDimensions_section1_title">Dimension attribute</string>
+    <string name="WmsOtherDimensions_row1_title">Name</string>
+    <string name="WmsOtherDimensions_row2_title">Units</string>
+    <string name="WmsOtherDimensions_row3_title">Unit symbol</string>
+    <string name="WmsOtherDimensions_row4_title">Default value</string>
+    <string name="WmsOtherDimensions_row5_title">Multiples values allowed</string>
+    <string name="WmsOtherDimensions_row6_title">Nearest value</string>
+    <string name="WmsOtherDimensions_row7_title">Current allowed</string>
+    <string name="WmsOtherDimensions_section2_title">Values</string>
+    <string name="WmsOtherDimensions_row_title">Value %s</string>
+    <string name="WmsOtherDimensions_section3_title">Ranges</string>
+    
+    <string name="WmsStyle_section1_title">Style description</string>
+    <string name="WmsStyle_row1_title">Name</string>
+    <string name="WmsStyle_row2_title">Title</string>
+    <string name="WmsStyle_row3_title">Abstract</string>
+    <string name="WmsStyle_section2_title">Legend</string>
+
+    <string name="WmsMetadata_win_title">Metadata</string>
+    <string name="WmsMetadata_section1_title">XML Server Response</string>
+    <string name="WmsMetadata_row1_title">View XML</string>
+    <string name="WmsMetadata_section2_title">Server info</string>
+    <string name="WmsMetadata_row2_title">Name</string>
+    <string name="WmsMetadata_row3_title">Title</string>
+    <string name="WmsMetadata_row4_title">Abstract</string>
+    <string name="WmsMetadata_row5_title">Provider website</string>
+    <string name="WmsMetadata_row6_title">Keywords</string>
+    <string name="WmsMetadata_section3_title">Service info</string>
+    <string name="WmsMetadata_row7_title">Layer limit</string>
+    <string name="WmsMetadata_row8_title">Max width</string>
+    <string name="WmsMetadata_row9_title">Max height</string>
+    <string name="WmsMetadata_row10_title">Fees</string>
+    <string name="WmsMetadata_row11_title">Access constraints</string>
+    <string name="WmsMetadata_section4_title">Contact info</string>
+    <string name="WmsMetadata_row12_title">Person</string>
+    <string name="WmsMetadata_row13_title">Organization</string>
+    <string name="WmsMetadata_row14_title">Position</string>
+    <string name="WmsMetadata_row15_title">Address type</string>
+    <string name="WmsMetadata_row16_title">Address</string>
+    <string name="WmsMetadata_row17_title">City</string>
+    <string name="WmsMetadata_row18_title">State or Province</string>
+    <string name="WmsMetadata_row19_title">Post code</string>
+    <string name="WmsMetadata_row20_title">Country</string>
+    <string name="WmsMetadata_row21_title">Telephone</string>
+    <string name="WmsMetadata_row22_title">Facsimile</string>
+    <string name="WmsMetadata_row23_title">E-mail</string>
+ 
+    <string name="WmsGetMap_win_title">Get map</string>
+    <string name="WmsGetMap_button_title">Send</string>
+    <string name="WmsGetMap_section1_title">Bounding box</string>
+    <string name="WmsGetMap_row1_title">CRS</string>
+    <string name="WmsGetMap_row2_title">Min latitude</string>
+    <string name="WmsGetMap_row3_title">Min longitude</string>
+    <string name="WmsGetMap_row4_title">Max latitude</string>
+    <string name="WmsGetMap_row5_title">Max longitude</string>
+    <string name="WmsGetMap_section2_title">Other dimensions</string>
+    <string name="WmsGetMap_section3_title">Map image</string>
+    <string name="WmsGetMap_row6_title">Width</string>
+    <string name="WmsGetMap_row6_hintText">Not specified yet</string>
+    <string name="WmsGetMap_row7_title">Height</string>
+    <string name="WmsGetMap_row7_hintText">Not specified yet</string>
+    <string name="WmsGetMap_message">Layer downloaded</string>
+    <string name="WmsGetMap_ErrorMessage">Insert the correct image size</string>
+        
+    <string name="WmsBackground_addLayer_win_title">Background colors</string>
+    <string name="WmsBackground_addLayer_section1_title">Opacity</string>
+    <string name="WmsBackground_addLayer_row1_title">Transparent</string>
+
+    <string name="WmsRgbOther_win_title">Choose RGB color</string>
+    <string name="WmsRgbOther_section1_title">RGB color</string>
+    <string name="WmsRgbOther_rgb_hintText">Insert an int value (0-255)</string>
+    <string name="WmsRgbOther_ErrorMessage">Insert the correct numbers (0-255)</string>
+
+    <string name="Overlays_win_title">Overlays</string>
+    
+    <string name="OverlayDetails_win_title">Overlay details</string>
+    <string name="OverlayDetails_section1_title">Overlay image</string>
+    <string name="OverlayDetails_section2_title">Image settings</string>
+    <string name="OverlayDetails_label1">Visible</string>
+    <string name="OverlayDetails_label2">Opacity</string>
+    <string name="OverlayDetails_section3_title">Coverage info</string>
+    <string name="OverlayDetails_row1_title">Coverage ID</string>
+    <string name="OverlayDetails_row2_title">Server name</string>
+    <string name="OverlayDetails_row3_title">Server URL</string>
+    <string name="OverlayDetails_section4_title">Image info</string>
+    <string name="OverlayDetails_row4_title">CRS</string>
+    <string name="OverlayDetails_row5_title">Min lat</string>
+    <string name="OverlayDetails_row6_title">Min lon</string>
+    <string name="OverlayDetails_row7_title">Max lat</string>
+    <string name="OverlayDetails_row8_title">Max lon</string>
+    <string name="OverlayDetails_row9_title">Width</string>
+    <string name="OverlayDetails_row10_title">Height</string>
+    <string name="OverlayDetails_row11_title">Bands</string>
+
+    <string name="NavButton_back">Back</string>
+    <string name="NavButton_close">Close</string>
+    
+</resources>

@@ -1,0 +1,15 @@
+<Alloy> 
+	<Window id="coverageInfoWin" title="Coverage Information" class="meeoWin">
+		<TableView id="coverageTv" class="meeoTableView">
+			<TableViewSection class="meeoTableView" headerTitle="Coverage ID and Type"/>
+				<TableViewRow class="meeoTableViewRow">
+					<Label class="meeoTitleRow" >Id</Label>
+					<Label class="meeoDescriptionRow" id="coverageId"/>					
+				</TableViewRow>	
+				<TableViewRow class="meeoTableViewRow">
+					<Label class="meeoTitleRow" >Type</Label>
+					<Label class="meeoDescriptionRow" id="coverageSubtype" />					
+				</TableViewRow>	
+		</TableView>
+    </Window>
+</Alloy>

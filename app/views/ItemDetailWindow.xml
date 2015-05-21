@@ -1,0 +1,5 @@
+<Alloy>
+	<Window>
+		<TableView id="tv" style="Titanium.UI.iPhone.TableViewStyle.GROUPED"></TableView>
+	</Window>
+</Alloy>

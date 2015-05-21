@@ -1,0 +1,75 @@
+<Alloy> 
+	<!-- IOS -->
+	<NavigationWindow id="mainNavGroup" platform="ios">
+		<Window id="mainWindow" title="EarthServer SG">
+			<RightNavButton platform="ios" >
+				<Button onClick="openCreditsWin" systemButton="Titanium.UI.iPhone.SystemButton.INFO_LIGHT" />
+			</RightNavButton>
+	        <TableView id="esaMerisTable" >         
+	            <TableViewRow id="bgsRow" class="textColor" name="BGS" repo="bgs"  hasChild="true" >
+	             	<ImageView id="bgsIV" image="/images/bgs.png" />
+	             	<ImageView class="unlock" />            	
+	        	</TableViewRow>
+	            <TableViewRow id="meoRow" class="textColor" name="MEEO" repo="WxS"  hasChild="true" >
+	             	<ImageView id="meoIV" image="/images/meeo.png" />
+	             	<ImageView id="meoLog" class="lock" /> 	            	
+	        	</TableViewRow>
+	            <TableViewRow id="wxsRow" class="textColor" name="WxS repositories" repo="WxS" hasChild="true" >
+	             	<ImageView id="wxsIV" image="/images/wxs.png" />
+	             	<ImageView id="wxsLog" class="lock" />
+	        	</TableViewRow>
+	            <TableViewRow id="esaRow" class="textColor" name="ESA-MERIS repository" repo="ESArep" backgroundColor="#fff" hasChild="true" >
+	            	<ImageView id="esaIV" image="/images/meris.png" />
+	            	<ImageView id="esaLog" class="lock" />
+	            </TableViewRow>
+	        </TableView>
+			<Toolbar platform="ios" bottom="0" height="50dp" borderTop="true" borderBottom="false" backgroundColor="#e0e0e0">
+				<!-- The Items tag sets the Toolbar.items property. -->
+				<Items>					
+					<Label id="usarnameLbl" visible="false">Logged as</Label>
+					<Label id="username" visible="false" />
+					<FlexSpace/>					
+					<Button id="logout" title="Log In" style="Ti.UI.iPhone.SystemButtonStyle.DONE" onClick="logout"/>
+				</Items>
+				<!-- Place additional views for the Toolbar here. -->
+			</Toolbar>
+		</Window>
+	</NavigationWindow>
+	<Window id="esaMerisWindow" platform="ios">
+		<RightNavButton platform="ios" >
+			<Button onClick="openInfoWin" systemButton="Titanium.UI.iPhone.SystemButton.INFO_LIGHT" />
+		</RightNavButton>
+		<TableView id="typesTableView" onClick="loadEntries"></TableView>
+    </Window>
+
+	<!-- ANDROID -->
+ 	<Window id="mainWindow" platform="android" title="EarthServer SG" onAndroid:back="androidBack" exitOnClose="true" >
+        <TableView id="esaMerisTable" separatorColor="#e0e0e0">
+            <TableViewRow id="bgsRow" class="textColor" name="BGS" repo="bgs"  hasChild="false" >
+             	<ImageView id="bgsIV" image="/images/bgs.png" />
+             	<ImageView class="unlock" />	            	
+        	</TableViewRow>
+            <TableViewRow id="meoRow" class="textColor" name="MEEO" repo="WxS"  hasChild="false" >
+             	<ImageView id="meoIV" image="/images/meeo.png" />	
+             	<ImageView id="meoLog" class="lock" />            	
+        	</TableViewRow>
+            <TableViewRow id="wxsRow" class="textColor" name="WxS repositories" repo="WxS" hasChild="false" >
+             	<ImageView id="wxsIV" image="/images/wxs.png" />
+             	<ImageView id="wxsLog" class="lock" />
+        	</TableViewRow>
+            <TableViewRow id="esaRow" class="textColor" name="ESA-MERIS repository" repo="ESArep" backgroundColor="#fff" hasChild="false" >
+            	<ImageView id="esaIV" image="/images/meris.png" />
+            	<ImageView id="esaLog" class="lock" />
+            </TableViewRow>
+        </TableView>
+		<View platform="android" height="50" bottom="0" borderTop="true" borderBottom="false" backgroundColor="#e0e0e0">
+			<Label id="usarnameLbl" visible="false">Logged as</Label>
+			<Label id="username" visible="false" />>
+			<Label id="logout" right="10dp" onClick="logout" color="#000" >Log In</Label>		
+			<!--<Button id="logout" title="Log Out" onClick="logout" right="10" />-->
+		</View>
+	</Window>
+ 	<Window id="esaMerisWindow" platform="android" backgroundColor="#fff">
+		<TableView id="typesTableView" onClick="loadEntries" bottom="50" ></TableView>
+    </Window>
+</Alloy>

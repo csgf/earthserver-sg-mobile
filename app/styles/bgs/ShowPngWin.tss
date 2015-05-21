@@ -1,0 +1,7 @@
+".pngImageView[platform=ios]" : {
+	width: Ti.UI.SIZE,
+	height : Ti.UI.SIZE,	
+},
+".pngImageView[platform=android]" : {
+	width: "100%"
+}

@@ -1,0 +1,109 @@
+"Label": {
+	font : {
+		fontSize : Ti.API.WxsCss.titleFontSize,
+		fontWeight : 'bold'
+	},
+	color : Ti.API.WxsCss.titleColor,
+},
+"#currentCity": {
+	font : {
+		fontSize : Ti.API.WxsCss.descriptionFontSize,
+		fontWeight : 'normal'
+	},
+	color : Ti.API.WxsCss.descriptionColor,
+	right : "10dp"
+},
+"#pickerView[platform=ios]": {
+	height:251,
+	top:-251,
+	backgroundColor : "#fff"
+},
+"#pickerView[platform=android]": {
+	height:200,
+	width : 250,
+	backgroundColor:"#282828",
+	visible : false
+},
+"Toolbar[platform=ios]": {
+	top: 0
+},
+".alert[platform=android]": {
+	backgroundColor : "#282828",
+	borderColor: "#343434",
+	borderWidth : 1,
+	width : 126,
+	height : "100%",
+	color : "#fff",
+	bottom : -1,
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#pickerViewTitle":  {
+	backgroundColor : "#282828",
+	borderColor: "#32abd8",
+	borderWidth : 2,
+	top : -2,
+	left : -2,
+	height : 50,
+	width : 254,
+	color : "#32abd8",
+	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font : {fontSize : "22sp"}
+},
+"#address[platform=ios]": {
+	hintText : "Enter address....",
+	color : "#000",
+	font : {
+		fontSize : Ti.API.WxsCss.titleFontSize,
+		fontWeight : 'normal'
+	},
+	height : "60dp",
+	left : "10dp",
+	right  :"10dp"
+},
+"#address[platform=android]": {
+	hintText : "Enter address....",
+	color : "#fff",
+	font : {
+		fontSize : Ti.API.WxsCss.titleFontSize,
+		fontWeight : 'normal'
+	},
+	height : "60dp",
+	left : "10dp",
+	right  :"10dp"
+},
+"#activityIndicator" : {
+	font : {
+		fontSize : Ti.API.WxsCss.descriptionFontSize,
+		fontWeight : 'normal'
+	},
+	color : Ti.API.WxsCss.descriptionColor,
+	right : "10dp",
+	message : "Loading...",
+	visible : false
+},
+"#activityIndicatorView" : {
+	font : {
+		fontSize : "26dp",
+		fontWeight : 'bold'
+	},
+	color : "#fff",	
+	message : "Loading...",
+	visible : false
+},
+"#mapview" : {
+	mapType: Alloy.Globals.Map.NORMAL_TYPE,
+	height : "200dp",
+	//width : "200dp",
+	left : "0dp",
+	right : "0dp",
+	bottom : "0dp",
+	top : "0dp"
+},
+"#sliderLabel" : {
+	font : {
+		fontSize : Ti.API.WxsCss.descriptionFontSize,
+		fontWeight : 'normal'
+	},
+	color : Ti.API.WxsCss.descriptionColor,
+	top : "0dp",	
+}

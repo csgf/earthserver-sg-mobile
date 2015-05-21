@@ -1,0 +1,9 @@
+android/ATTR_PROJECT_NAME=EarthServer-SG-Mobile
+android/abi=armeabi
+android/distribute_path=/home/mario/Titanium_Studio_Workspace/EarthServer-SG-Mobile/dist
+android/keystore_alias=infn-ct
+android/keystore_password=sg-licence\:Passwd
+android/keystore_path=/home/mario/Scrivania/Backup/Scrivania/infn-ct.keystore
+android/recent_output=/home/mario/Titanium_Studio_Workspace/EarthServer-SG-Mobile/dist
+android/sdk_version=3.0
+eclipse.preferences.version=1

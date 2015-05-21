@@ -1,0 +1,77 @@
+<Alloy> 
+	<Window id="availableCoverageWin" class="meeoWin" title="Available coverages" >
+		<TableView id="tv" class="meeoTableView" onClick="tvClick">
+			<TableViewSection headerTitle="Geolocation">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false" onClick="changeSwitchGeolocation">
+					<Label class="meeoTitleRow" left="10dp">Current location</Label>
+					<Label class="meeoDescriptionRow" id="currentCoords" />
+					<Switch id="switchGeo" right="10dp" value = "true" onChange="checkGeolocation" />
+				</TableViewRow>
+				<TableViewRow id="currentCityRow" class="meeoTiSizeTableViewRow" hasChild="false" onClick="chooseFilter">
+					<Label left="10dp" id="city">City</Label>
+					<Label left="50dp" right="10dp" id="currentCity" textAlign="right" ></Label>
+					<ActivityIndicator id="activityIndicator" platform="ios" style="Titanium.UI.iPhone.ActivityIndicatorStyle.DARK"  />
+					<ActivityIndicator id="activityIndicator" platform="android" style="Ti.UI.ActivityIndicatorStyle.DARK"  />
+				</TableViewRow>
+				<TableViewRow id="drawMapRow" class="meeoTiSizeTableViewRow" hasChild="true" onClick="openDrawableMap">
+					<Label left="10dp" id="drawMapLbl">Draw a region on the map</Label>					
+				</TableViewRow>
+				<TableViewRow  class="meeoTiSizeTableViewRow" hasChild="false">
+					<View ns="Alloy.Globals.Map" id="mapview" />
+					<!--<View width="100%" height="200dp" backgroundColor="transparent" zIndex="100" />-->
+				</TableViewRow>
+				<!--<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label id= "sliderLabel">Degree: 0.000°</Label>
+					<Slider id="slider" bottom="0" left="20dp" right="20dp" min="0" max="100000" value="0" onChange="updateSliderLabel" onStop="updateMapDelta" zIndex="10"/>
+				</TableViewRow>-->
+			</TableViewSection>
+			<TableViewSection headerTitle="Selected Area">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Eastings (m BNG)</Label>
+					<Label class="meeoDescriptionRow" id="longitude" />		
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Northings (m BNG)</Label>
+					<Label class="meeoDescriptionRow" id="latitude" />		
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Width (m)</Label>
+					<Label class="meeoDescriptionRow" id="width" />		
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Height (m)</Label>
+					<Label class="meeoDescriptionRow" id="height" />		
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Area (mq)</Label>
+					<Label class="meeoDescriptionRow" id="area" />		
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection headerTitle="Available coverages in this area"  id="availableCoverageSection">
+				<!--<TableViewRow class="meeoTiSizeTableViewRow" id="availableCoverageRow"  hasChild="false" height="150dp">					
+					<Label class="meeoTitleRow" >Coverages List</Label>
+					<Label class="meeoTiSizeDescriptionRow" id="availableCoverage" />
+			</TableViewRow>-->
+			</TableViewSection>
+			<TableViewSection headerTitle="" id="notDownloadedCoverageSection" /> <!--"headerTitle="Coverages not yet downloaded"-->
+		</TableView>
+		<View id="pickerView" >
+			<Toolbar platform="ios">
+				<Items>
+					<Button id="cancelBtn" systemButton="Ti.UI.iPhone.SystemButton.CANCEL" onClick="hidePickerView" />
+					<FlexSpace />
+					<Button id="doneBtn" title="Done" style="Titanium.UI.iPhone.SystemButtonStyle.DONE" onClick="filterChoosen" />					
+				</Items>
+			</Toolbar>
+			<TextField id="address" onReturn="filterChoosen" />
+			<Label id="pickerViewTitle" platform="android" text="Enter address" />
+			<View platform="android" bottom="0" height="50">
+				<Label class="alert" platform="android" id="doneBtn" text="Done" left="-1" onClick="filterChoosen" />
+				<Label class="alert" platform="android" id="cancelBtn" text="Cancel" onClick="hidePickerView" right="-1" />
+			</View>
+		</View>
+		<View id="loadingView" backgroundColor="#000" width="100%" height="100%" opacity="0.4" visible="false" zIndex="10" />
+		<ActivityIndicator id="activityIndicatorView" platform="ios" style="Titanium.UI.iPhone.ActivityIndicatorStyle.BIG" zIndex="11" />
+		<ActivityIndicator id="activityIndicatorView" platform="android" style="Ti.UI.ActivityIndicatorStyle.BIG" zIndex="11" />	
+    </Window>
+</Alloy>

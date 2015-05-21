@@ -1,0 +1,1 @@
+module.exports = [{"isApi":true,"priority":1000.0039,"key":"ActivityIndicator","style":{style:Titanium.UI.iPhone.ActivityIndicatorStyle.DARK,height:Ti.UI.SIZE,width:Ti.UI.SIZE,}},{"isClass":true,"priority":10000.0038,"key":"container","style":{backgroundColor:"white",}},{"isId":true,"priority":100000.004,"key":"itemBrowserTableView","style":{bottom:"44dp",}}];

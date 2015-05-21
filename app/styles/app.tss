@@ -1,0 +1,82 @@
+".textColor" : {
+	color : "#000"
+},
+// MEEO GLOBAL TSS -->
+".meeoWin" : {
+	backgroundImage : '/images/bgImage.png'
+},
+".meeoTableView[platform=ios]" : {
+	minRowHeight : "50dp",
+	backgroundColor : "transparent",
+	separatorColor : "transparent"
+},
+".meeoTableView[platform=android]" : {
+	minRowHeight : "50dp",
+	backgroundColor : "transparent",
+	separatorColor : "gray"
+},
+".meeoTableViewRow" : {
+	height : "50dp",
+	backgroundColor : "#fff"
+},
+".meeoTitleRow" : {
+	font : {
+		fontSize : Ti.API.WxsCss.titleFontSize,
+		fontWeight : 'bold'
+	},
+	color : Ti.API.WxsCss.titleColor,
+	left : "10dp",
+	top : "5dp",
+	height : Ti.API.WxsCss.titleHeight,
+	right : "10dp"
+},
+".meeoOnlyTitleRow" : {
+	font : {
+		fontSize : Ti.API.WxsCss.titleFontSize,
+		fontWeight : 'bold'
+	},
+	color : Ti.API.WxsCss.titleColor,
+	left : "10dp",
+	//top : "5dp",
+	height : Ti.API.WxsCss.titleHeight,
+	right : "10dp"
+},
+".meeoDescriptionRow" : {
+	font : {
+		fontSize : Ti.API.WxsCss.descriptionFontSize,
+		fontWeight : 'normal'
+	},
+	color : Ti.API.WxsCss.descriptionColor,
+	left : "10dp",
+	bottom : "5dp",	
+	height : Ti.API.WxsCss.descriptionHeight,
+	right : "10dp"
+},
+".meeoTiSizeTableViewRow" : {
+	height : Ti.UI.SIZE,
+	backgroundColor : "#fff"
+},
+".meeoTiSizeTitleRow" : {
+	font : {
+		fontSize : Ti.API.WxsCss.titleFontSize,
+		fontWeight : 'bold'
+	},
+	color : Ti.API.WxsCss.titleColor,
+	left : "10dp",
+	top : "5dp",
+	height : Ti.UI.SIZE,
+	right : "10dp"
+},
+".meeoTiSizeDescriptionRow" : {
+	font : {
+		fontSize : Ti.API.WxsCss.descriptionFontSize,
+		fontWeight : 'normal'
+	},
+	color : Ti.API.WxsCss.descriptionColor,
+	left : "10dp",
+	top : "25dp",
+	bottom : "5dp",
+	right : "10dp",
+	height : Ti.UI.SIZE
+}
+// MEEO GLOBAL TSS <--

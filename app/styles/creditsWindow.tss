@@ -1,0 +1,18 @@
+".container": {
+	backgroundColor: "white"
+},
+"#wv" : {
+	top : "0dp",
+	bottom : "160dp",
+	url : "/info.html"
+},
+"#tv" : {
+	height : "160dp",
+	bottom : "0dp",
+	rowHeight : "40dp",
+	backgroundColor : "#f0f0f0",
+	separatorColor : "#838383"
+},
+".tvr" : {
+	height : "40dp"	
+}

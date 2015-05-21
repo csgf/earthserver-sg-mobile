@@ -1,0 +1,19 @@
+"#activityIndicator" : {
+	font : {
+		fontSize : Ti.API.WxsCss.descriptionFontSize,
+		fontWeight : 'normal'
+	},
+	color : Ti.API.WxsCss.descriptionColor,
+	right : "10dp",
+	message : "Loading...",
+	visible : false
+},
+"#activityIndicatorView" : {
+	font : {
+		fontSize : "26dp",
+		fontWeight : 'bold'
+	},
+	color : "#fff",	
+	message : "Loading...",
+	visible : false
+}

@@ -1,0 +1,16 @@
+"ActivityIndicator" : {
+	font : {
+		fontSize : "26dp",
+		fontWeight : 'bold'
+	},
+	color : "#fff",	
+	message : "Loading...",
+	visible : false
+},
+"#sliderSize" : {
+	left : "100dp",
+	right : "15dp",
+	value : 0,
+	min : 0,
+	max : 100
+}

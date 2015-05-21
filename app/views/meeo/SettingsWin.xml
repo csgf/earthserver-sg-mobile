@@ -1,0 +1,30 @@
+<Alloy> 
+	<Window id="settingsWin" class="meeoWin" onOpen="addMeeoServer" >
+		<RightNavButton platform="ios" >
+			<Button onClick="openInfoWin" systemButton="Titanium.UI.iPhone.SystemButton.INFO_LIGHT"/>
+		</RightNavButton>
+		<TableView class="meeoTableView">
+			<TableViewSection headerTitle="Queries the server">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" onClick="showAvailableCoverage">
+					<Label class="meeoTiSizeTitleRow" text="Available coverages" />
+					<Label class="meeoTiSizeDescriptionRow" text="Show coverages available in your location" />
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection headerTitle="L('settings_section2_title')">
+				<TableViewRow class="meeoTableViewRow" hasChild="true" onClick="showServerCapabilities">
+					<Label class="meeoTitleRow" text="L('settings_row4_title')" />
+					<Label class="meeoDescriptionRow" text="L('settings_row4_description')" />
+				</TableViewRow>
+			</TableViewSection>
+			<!--<TableViewSection headerTitle="L('settings_section3_title')">
+				<TableViewRow class="meeoTableViewRow" hasChild="true" onClick="showCoverageDescriptionList">
+					<Label class="meeoTitleRow" text="L('settings_row6_title')" />
+					<Label class="meeoDescriptionRow" text="L('settings_row6_description')" />
+				</TableViewRow>
+			</TableViewSection>	-->		
+		</TableView>
+		<View id="loadingView" backgroundColor="#000" width="100%" height="100%" opacity="0.4" visible="false" zIndex="10"/>
+		<ActivityIndicator id="activityIndicatorView" platform="ios" style="Titanium.UI.iPhone.ActivityIndicatorStyle.BIG" zIndex="11" />
+		<ActivityIndicator id="activityIndicatorView" platform="android" style="Ti.UI.ActivityIndicatorStyle.BIG" zIndex="11" />	
+    </Window>
+</Alloy>

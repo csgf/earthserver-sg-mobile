@@ -1,0 +1,36 @@
+".container": {
+	backgroundColor: "white"
+},
+"#username": {
+	width: "80",
+	text: "none",
+	borderWidth: 1,
+	borderColor: "black"
+},
+"ImageView": {
+	left: "10dp",
+	width: "70dp",
+	height: "70dp"
+},
+"#title": {
+	left: "90dp",
+	top: "5dp",
+	right: "5dp",
+	font: {
+		fontSize: "16dp",
+		fontWeight: "bold"
+	}
+	
+},
+"#desc": {
+	left: "90dp",
+	top: "30dp",
+	right: "5dp",
+	//borderWidth: 1,
+	font: {
+		fontSize: "14dp"
+	},
+	color: "gray"
+	
+	
+}	

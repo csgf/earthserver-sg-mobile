@@ -1,0 +1,61 @@
+<Alloy> 
+	<Window id="rgbWin" class="meeoWin" title="RGB" onOpen="checkRgb" >
+		<RightNavButton platform="ios" >
+			<Button onClick="showInfo" systemButton="Titanium.UI.iPhone.SystemButton.INFO_LIGHT"/>
+		</RightNavButton>
+		<TableView id="tvRgb" class="meeoTableView" >
+			<TableViewSection headerTitle="Assign 6 Landsat data bands to RGB">
+				<TableViewRow class="rgbTableViewRow" hasChild="false">
+					<Label class="rgbBandRow" >b1: 0.45-0.52µm (blue)</Label>
+					<Label class="red" id="rb1">R</Label>					
+					<Label class="green" id="gb1">G</Label>
+					<Label class="blue" id="bb1">B</Label>
+				</TableViewRow>						
+				<TableViewRow class="rgbTableViewRow" hasChild="false">
+					<Label class="rgbBandRow" >b2: 0.52-0.60µm (green)</Label>
+					<Label class="red" id="rb2">R</Label>
+					<Label class="green" id="gb2">G</Label>
+					<Label class="blue" id="bb2">B</Label>
+				</TableViewRow>	
+				<TableViewRow class="rgbTableViewRow" hasChild="false">
+					<Label class="rgbBandRow" >b3: 0.63-0.69µm (red)</Label>
+					<Label class="red" id="rb3">R</Label>
+					<Label class="green" id="gb3">G</Label>
+					<Label class="blue" id="bb3">B</Label>
+				</TableViewRow>	
+				<TableViewRow class="rgbTableViewRow" hasChild="false">
+					<Label class="rgbBandRow" >b4: 0.77-0.90µm (NIR)</Label>
+					<Label class="red" id="rb4">R</Label>
+					<Label class="green" id="gb4">G</Label>
+					<Label class="blue" id="bb4">B</Label>
+				</TableViewRow>	
+				<TableViewRow class="rgbTableViewRow" hasChild="false">
+					<Label class="rgbBandRow" >b5: 1.55-1.75µm (NIR)</Label>
+					<Label class="red" id="rb5">R</Label>
+					<Label class="green" id="gb5">G</Label>
+					<Label class="blue" id="bb5">B</Label>
+				</TableViewRow>	
+				<TableViewRow class="rgbTableViewRow" hasChild="false">
+					<Label class="rgbBandRow" >b7: 2.09-2.35µm (MIR)</Label>
+					<Label class="red" id="rb7">R</Label>
+					<Label class="green" id="gb7">G</Label>
+					<Label class="blue" id="bb7">B</Label>
+				</TableViewRow>	
+			</TableViewSection>
+			<TableViewSection headerTitle="Parameters chosen">
+				<TableViewRow class="rgbTableViewRow" hasChild="false">
+					<Label class="rgbTitleRow" >Red</Label>
+					<Label class="rgbValueRow" color="#c00000" id="red">b1</Label>
+				</TableViewRow>
+				<TableViewRow class="rgbTableViewRow" hasChild="false">
+					<Label class="rgbTitleRow" >Green</Label>
+					<Label class="rgbValueRow" color="#008000" id="green">b2</Label>
+				</TableViewRow>
+				<TableViewRow class="rgbTableViewRow" hasChild="false">
+					<Label class="rgbTitleRow" >Blue</Label>
+					<Label class="rgbValueRow" color="#0000a0" id="blue">b3</Label>
+				</TableViewRow>				
+			</TableViewSection>
+		</TableView>
+    </Window>
+</Alloy>

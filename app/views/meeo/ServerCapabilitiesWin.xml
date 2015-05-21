@@ -1,0 +1,10 @@
+<Alloy> 
+	<Window id="serverCapabilitiesWin" title="MEEO Capabilities" class="meeoWin" onOpen="loadCapabilities">
+		<TableView id="capabilitiesTv" class="meeoTableView" onClick="tvClick">
+			<TableViewSection class="meeoTableView" headerTitle="L('WcsServer_section1_title')"/>
+				<TableViewRow class="meeoTableViewRow" hasChild="true">
+					<Label class="meeoOnlyTitleRow" text="L('settings_row1_title')" />					
+				</TableViewRow>	
+		</TableView>
+    </Window>
+</Alloy>

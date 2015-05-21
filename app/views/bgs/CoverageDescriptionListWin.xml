@@ -1,0 +1,5 @@
+<Alloy> 
+	<Window id="CoverageDescriptionListWin" title="MEEO Coverages List" class="meeoWin">
+		<TableView id="coverageListTv" class="meeoTableView" onClick="showCoverageMetadata" />
+    </Window>
+</Alloy>

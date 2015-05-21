@@ -1,0 +1,23 @@
+<Alloy>
+	<Window class="container">
+		<RightNavButton>
+			<Button id="addFilter" systemButton="Titanium.UI.iPhone.SystemButton.ADD" onClick="chooseFilter"/>
+		</RightNavButton>
+		<TableView id="filters" editable="true" onClick="filterValues" onLongclick="deleteFilter" />
+		<!--<Picker visible="false" id="filterList"/> -->
+		<View id="pickerView" >
+			<Toolbar platform="ios">
+				<Items>
+					<Button id="cancelBtn" systemButton="Ti.UI.iPhone.SystemButton.CANCEL" onClick="hidePickerView" />
+					<FlexSpace />
+					<Button id="doneBtn" title="Done" style="Titanium.UI.iPhone.SystemButtonStyle.DONE" onClick="filterChoosen" />
+				</Items>
+			</Toolbar>
+			<Label id="pickerViewTitle" platform="android" text="Choose filter" />
+			<View platform="android" bottom="0" height="50">
+				<Label platform="android" id="doneBtn" text="Done" left="-1" onClick="filterChoosen" />
+				<Label platform="android" id="cancelBtn" text="Cancel" onClick="hidePickerView" right="-1" />
+			</View>
+		</View>
+	</Window>
+</Alloy>

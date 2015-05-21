@@ -1,0 +1,45 @@
+<Alloy> 
+	<Window id="showPngWin" backgroundColor="#fff" title="Landsat Image" onClose="removePng" >
+		<TableView id="tv" class="meeoTableView" >
+			<TableViewSection headerTitle="Viewing rendered Landsat image">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false" onClick="showImage">
+					<ImageView class="pngImageView" id="pngIV" />
+				</TableViewRow>
+			</TableViewSection>
+			<TableViewSection headerTitle="Image information">
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Coverage</Label>
+					<Label class="meeoDescriptionRow" id="coverageName" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Data</Label>
+					<Label class="meeoDescriptionRow" id="data">Landsat</Label>
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Size (pixel)</Label>
+					<Label class="meeoDescriptionRow" id="size" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Eastings (m BNG)</Label>
+					<Label class="meeoDescriptionRow" id="longitude" />	
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false">
+					<Label class="meeoTitleRow" >Northings (m BNG)</Label>
+					<Label class="meeoDescriptionRow" id="latitude" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false" rgbrow="true">
+					<Label class="meeoTitleRow" >Red</Label>
+					<Label class="meeoDescriptionRow" id="red" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false" rgbrow="true">
+					<Label class="meeoTitleRow" >Green</Label>
+					<Label class="meeoDescriptionRow" id="green" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="false" rgbrow="true">
+					<Label class="meeoTitleRow" >Blue</Label>
+					<Label class="meeoDescriptionRow" id="blue" />
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
+    </Window>
+</Alloy>

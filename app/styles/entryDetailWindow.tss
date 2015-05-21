@@ -1,0 +1,11 @@
+".container": {
+	backgroundColor: "white"
+},
+"#thumb": {
+	top: 5,
+	height: 120
+},
+"#details[platform=ios]": {
+	//top: 130,
+	style: Titanium.UI.iPhone.TableViewStyle.GROUPED
+}

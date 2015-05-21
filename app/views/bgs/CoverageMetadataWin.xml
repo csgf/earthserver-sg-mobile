@@ -1,0 +1,19 @@
+<Alloy> 
+	<Window id="CoverageMetadataWin" title="Coverage Metadata" class="meeoWin" >
+		<TableView class="meeoTableView">
+			<TableViewSection id="selectedCoverageId" >
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" onClick="showCoverageInfo" >
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageMetadata_row1_title')" />
+					<Label class="meeoTiSizeDescriptionRow" text="L('WcsCoverageMetadata_row1_description')" />
+				</TableViewRow>
+				<TableViewRow class="meeoTiSizeTableViewRow" hasChild="true" onClick="showDescribeCoverage" >
+					<Label class="meeoTiSizeTitleRow" text="L('WcsCoverageMetadata_row2_title')" />
+					<Label class="meeoTiSizeDescriptionRow" text="L('WcsCoverageMetadata_row2_description')" />
+				</TableViewRow>
+			</TableViewSection>
+		</TableView>
+		<View id="loadingView" backgroundColor="#000" width="100%" height="100%" opacity="0.4" visible="false" zIndex="10"/>
+		<ActivityIndicator id="activityIndicatorView" platform="ios" style="Titanium.UI.iPhone.ActivityIndicatorStyle.BIG" zIndex="11" />
+		<ActivityIndicator id="activityIndicatorView" platform="android" style="Ti.UI.ActivityIndicatorStyle.BIG" zIndex="11" />
+    </Window>
+</Alloy>

@@ -1,0 +1,58 @@
+".container": {
+	backgroundColor: "white",
+	layout: "vertical"
+},
+"uploadTv[platform=ios]": {
+	style : "Titanium.UI.iPhone.TableViewStyle.GROUPED"
+},
+"TextField": {
+	//borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	//width: "95%",
+	height: "50dp",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	//borderWidth: 1,
+	width: Ti.UI.FILL,
+	left: "5dp"
+	//top: "10dp",
+	//hintText: "file name"
+},
+"TableView": {
+	height: "230dp"
+},
+"#descTxt": {
+	height: "100dp",
+	color: "grey",
+	font: {fontSize: "16dp"},
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	width: Ti.UI.FILL
+	//borderWidth: 1,
+	//left: "5dp",
+	//right: "5dp",
+},
+".button": {
+	top: "10dp",
+	height: "40dp",
+	width: "145dp",
+	left: "10dp"
+},
+"#uploadBtn": {
+	top: "10dp",
+	height: "50dp",
+	right: "10dp"
+},
+"#progress": {
+	top: "10dp",
+	width: "95%",
+	height: "auto",
+	min: "0",
+	max: "1",
+	value: "0"
+	//color: "#fff",
+	//message: "Upload"
+},
+"ImageView": {
+	left: "10dp",
+	top: "10dp",
+	width: "50dp",
+	height: "50dp"
+}

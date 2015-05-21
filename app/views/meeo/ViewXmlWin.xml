@@ -1,0 +1,5 @@
+<Alloy> 
+	<Window id="ViewXmlWin" title="XML Server Response" class="meeoWin" >
+		<TextArea id="xmlTxa" />			
+    </Window>
+</Alloy>

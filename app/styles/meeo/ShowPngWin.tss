@@ -1,0 +1,93 @@
+/*"#bgView" : {
+	top : "0dp",
+	backgroundColor : "#fff",
+	width : "100%",
+	height : "300dp",
+	layout : "vertical"
+},*/
+"View" : {
+	top : "10dp",
+	height : "50dp"
+},
+"#titleLbl[platform=ios]" : {
+	top : "10dp",
+	font : {
+		fontSize : "14sp",
+		fontWeight : 'normal'
+	},
+	color : "#000",
+	left : "10dp",
+	right : "10dp",
+	textAlign : "center"
+},
+"#titleLbl[platform=android]" : {
+	top : "10dp",
+	//bottom : "10dp",
+	font : {
+		fontSize : "14sp",
+		fontWeight : 'normal'
+	},
+	color : "#000",
+	left : "10dp",
+	right : "10dp",
+	textAlign : "center"
+},
+"#imagesPng[platform=ios]" : {
+	top : "10dp",	
+},
+"#imagesPng[platform=android]" : {
+	top : "20dp",
+	//bottom : "20dp"
+},
+"#pauseStartBtn" : {
+	left : "10dp",
+	width : "30dp",
+	height : "30dp",
+	backgroundImage : "/pause.png"
+},
+"#sliderImages" : {
+	left : "50dp",
+	right : "10dp"
+},
+"#opacityIV" : {
+	left : "10dp",
+	width : "30dp",
+	height : "30dp",
+	image : "/opacity.png" 
+},
+"#sliderOpacity" : {
+	left : "50dp",
+	right : "10dp",
+	value : 1,
+	min : 0,
+	max : 1
+},
+"#speedIV" : {
+	left : "10dp",
+	width : "30dp",
+	height : "30dp",
+	image : "/speed.png" 
+},
+"#speedLbl" : {
+	font : {
+		fontSize : "12sp",
+		fontWeight : 'normal'
+	},
+	color : "#000",
+	left : "50dp",
+	right : "90dp"	
+},
+"#lessBtn" : {
+	right : "50dp",
+	width : "30dp",
+	height : "30dp",
+	backgroundImage : "/less.png",
+	zIndex : 10
+},
+"#moreBtn" : {
+	right : "10dp",
+	width : "30dp",
+	height : "30dp",
+	backgroundImage : "/more.png",
+	zIndex : 10 
+}

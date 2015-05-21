@@ -1,0 +1,5 @@
+<Alloy> 
+	<Window id="chartWin" class="meeoWin" title="Coverage Chart" >
+		<WebView id="wv" url="/highcharts/chart.html"/>
+    </Window>
+</Alloy>
