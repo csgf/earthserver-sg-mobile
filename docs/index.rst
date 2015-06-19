@@ -97,18 +97,18 @@ Once the application is installed on you mobile appliance, you can access the fo
 
 .. image:: images/screen1.png
    :align: center  
-   :target: https://earth.esa.int
-   :alt: esa MERIS data logo
+   :alt: MEEO and BGS WCS clients
    :scale: 50%
    
-Some 
+Some screenshots of the MEEO and BGS WCS client. 
    
 .. image:: images/screen2.png
    :align: center  
-   :target: https://earth.esa.int
-   :alt: esa MERIS data logo
+   :alt: Generic WCS & WMS client, MERIS browser
    :scale: 50%
    
+Some screenshots of the generic WCS & WMS client and the MERIS browser.
+
 ============
 References
 ============
@@ -117,3 +117,23 @@ References
 Support
 ============
 
+Please feel free to contact us any time if you have any questions or comments.
+
+.. _INFN: http://www.ct.infn.it/
+.. _DFA: http://www.dfa.unict.it/
+.. _SWINGIT: http://www.swing-it.net/
+
+:Authors:
+ 
+ `Roberto BARBERA <mailto:roberto.barbera@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+ `Antonio CALANDUCCI <mailto:antonio.calanducci@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+ `Roberto BARBERA <mailto:roberto.barbera@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+ `Marco PAPPALARDO <mailto:marco.pappalardo@softwareengineering.it>`_ - Software Engineering Italia s.r.l. (SWINGIT_),
+ `Rita Ricceri <mailto:rita.ricceri@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_), 
+ Francesco Rundo,
+ Vittorio Sorbera,
+ `Mario TORRISI <mailto:mario.torrisi@ct.infn.it>`_ - University of Catania (DFA_)
+
+:Version: v2.6.0, 2015
+
+:Date: June 17th, 2015 19:00
