@@ -61,7 +61,7 @@ Installation
 
 To install EarthServer SG Mobile on your devices simply download the app from the store
 
-|PLAY-STORE| |PLAY-STORE| 
+|PLAY-STORE| |APP-STORE| 
 
 .. |PLAY-STORE| image:: images/google_play_icon.png
    :align: middle 
@@ -82,12 +82,14 @@ or scan one of the following QR code
 .. |ANDROID-QR| image:: images/android_qr.png
    :align: middle
    :alt: EarthServer SG Mobile app store
-   :scale: 10%
+   :height: 100px
+   :width: 100px
     
 .. |IOS-QR| image:: images/appstore_qr.png
    :align: middle
    :alt: EarthServer SG Mobile app store
-   :scale: 10%
+   :height: 100px
+   :width: 100px
 
 ============
 Usage
