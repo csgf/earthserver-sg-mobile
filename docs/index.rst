@@ -82,14 +82,12 @@ or scan one of the following QR code
 .. |ANDROID-QR| image:: images/android_qr.png
    :align: middle
    :alt: EarthServer SG Mobile app store
-   :height: 100px
-   :width: 100px
+   :scale: 80%
     
 .. |IOS-QR| image:: images/appstore_qr.png
    :align: middle
    :alt: EarthServer SG Mobile app store
-   :height: 100px
-   :width: 100px
+   :scale: 80%
 
 ============
 Usage
