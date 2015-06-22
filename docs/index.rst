@@ -17,7 +17,7 @@ About
    :scale: 100%
   
 
-**EarthServer SG Mobile** is a mobile application developed in the contest of `EartServer project <PROJECT-URL_>`_, Android and iOS versions are available from `Google Play <PLAY_>`_ and the `Apple Store <ITUNES_>`_. The main aim of this mobile app is to provide an easy way to access data services that make use of the OpenSource Geospatial Catalogue (OSGC) standards such as WCS and WMS as well as provide data repository access containing metadata. 
+**EarthServer SG Mobile** is a mobile application developed in the contest of `EartServer project <PROJECT-URL_>`_, Android and iOS versions are available from `Google Play <PLAY_>`_ and the `App Store <ITUNES_>`_. The main aim of this mobile app is to provide an easy way to access data services that make use of the OpenSource Geospatial Catalogue (OSGC) standards such as WCS and WMS as well as provide data repository access containing metadata. 
 
 The **EarthServer SG Mobile** app allows users to interact with the following four services:
 
@@ -126,12 +126,19 @@ Please feel free to contact us any time if you have any questions or comments.
 :Authors:
  
  `Roberto BARBERA <mailto:roberto.barbera@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+
  `Antonio CALANDUCCI <mailto:antonio.calanducci@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+
  `Roberto BARBERA <mailto:roberto.barbera@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+
  `Marco PAPPALARDO <mailto:marco.pappalardo@softwareengineering.it>`_ - Software Engineering Italia s.r.l. (SWINGIT_),
+
  `Rita Ricceri <mailto:rita.ricceri@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_), 
+
  Francesco Rundo,
+
  Vittorio Sorbera,
+
  `Mario TORRISI <mailto:mario.torrisi@ct.infn.it>`_ - University of Catania (DFA_)
 
 :Version: v2.6.0, 2015
