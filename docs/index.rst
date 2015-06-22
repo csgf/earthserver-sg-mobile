@@ -95,23 +95,26 @@ Usage
 
 Once the application is installed on you mobile appliance, you can access the four services from the main screen and navigate through a well defined path to exploit the application features. 
 
-.. image:: images/screen1.png
-   :align: center  
+.. figure:: images/screen1.png
+   :align: center
    :alt: MEEO and BGS WCS clients
    :scale: 50%
+   :figclass: text    
    
-Some screenshots of the MEEO and BGS WCS client. 
-   
-.. image:: images/screen2.png
-   :align: center  
+   Figure 1. Some screenshots of the MEEO and BGS WCS client.
+
+.. figure:: images/screen2.png
+   :align: center
    :alt: Generic WCS & WMS client, MERIS browser
    :scale: 50%
+   :figclass: text    
    
-Some screenshots of the generic WCS & WMS client and the MERIS browser.
+   Figure 2. Some screenshots of the generic WCS & WMS client and the MERIS browser.
+   
 
-============
-References
-============
+.. ============
+.. References
+.. ============
 
 ============
 Support
