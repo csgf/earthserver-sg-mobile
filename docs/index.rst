@@ -1,6 +1,6 @@
-********************************
-EarthServer SG Mobile (v. 2.6.2) 
-********************************
+*********************
+EarthServer SG Mobile
+*********************
 
 ============
 About
@@ -117,33 +117,41 @@ Once the application is installed on you mobile appliance, you can access the fo
 .. ============
 
 ============
-Support
+Contributors
 ============
 
-Please feel free to contact us any time if you have any questions or comments.
+Roberto BARBERA
+
+Antonio CALANDUCCI
+
+Marco PAPPALARDO
+
+Rita RICCERI
+
+Francesco RUNDO
+
+Vittorio SORBERA
+
+Mario TORRISI
+
+.. Please feel free to contact us any time if you have any questions or comments.
 
 .. _INFN: http://www.ct.infn.it/
 .. _DFA: http://www.dfa.unict.it/
 .. _SWINGIT: http://www.swing-it.net/
 
-:Authors:
+.. :Authors:
  
- `Roberto BARBERA <mailto:roberto.barbera@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+.. `Roberto BARBERA <mailto:roberto.barbera@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
 
- `Antonio CALANDUCCI <mailto:antonio.calanducci@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+.. `Antonio CALANDUCCI <mailto:antonio.calanducci@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
 
- `Roberto BARBERA <mailto:roberto.barbera@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_),
+.. `Marco PAPPALARDO <mailto:marco.pappalardo@softwareengineering.it>`_ - Software Engineering Italia s.r.l. (SWINGIT_),
 
- `Marco PAPPALARDO <mailto:marco.pappalardo@softwareengineering.it>`_ - Software Engineering Italia s.r.l. (SWINGIT_),
+.. `Rita Ricceri <mailto:rita.ricceri@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_), 
 
- `Rita Ricceri <mailto:rita.ricceri@ct.infn.it>`_ - Italian National Institute of Nuclear Physics (INFN_), 
+.. Francesco Rundo,
 
- Francesco Rundo,
+.. Vittorio Sorbera,
 
- Vittorio Sorbera,
-
- `Mario TORRISI <mailto:mario.torrisi@ct.infn.it>`_ - University of Catania (DFA_)
-
-:Version: v2.6.0, 2015
-
-:Date: June 17th, 2015 19:00
+.. `Mario TORRISI <mailto:mario.torrisi@ct.infn.it>`_ - University of Catania (DFA_)
