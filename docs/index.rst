@@ -1,5 +1,5 @@
 *********************
-EarthServer SG Mobile
+EARTHSERVER SG MOBILE
 *********************
 
 ============
