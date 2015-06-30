@@ -16,6 +16,7 @@ About
    :alt: EarthServer SG Mobile logo
    :scale: 100%
   
+-------------
 
 **EarthServer SG Mobile** is a mobile application developed in the contest of `EartServer project <PROJECT-URL_>`_, Android and iOS versions are available from `Google Play <PLAY_>`_ and the `App Store <ITUNES_>`_. The main aim of this mobile app is to provide an easy way to access data services that make use of the OpenSource Geospatial Catalogue (OSGC) standards such as WCS and WMS as well as provide data repository access containing metadata. 
 
@@ -23,7 +24,7 @@ The **EarthServer SG Mobile** app allows users to interact with the following fo
 
 1. Climate Data Services provided by the Meteorological Environmental Earth Observation (`MEEO <www.meeo.it/>`_) WCS server
 
-.. image:: images/meeo_logo.png
+.. .. image:: images/meeo_logo.png
    :align: center  
    :target: http://www.meeo.it
    :alt: MEEO s.r.l. logo
@@ -31,7 +32,7 @@ The **EarthServer SG Mobile** app allows users to interact with the following fo
 
 2. Geological Data Service provided by the British Geological Survey (`BGS <http://www.bgs.ac.uk/>`_) WCS server
 
-.. image:: images/bgs_logo.png
+.. .. image:: images/bgs_logo.png
    :align: center  
    :target: http://www.bgs.ac.uk/
    :alt: British Geological Survey logo
@@ -39,7 +40,7 @@ The **EarthServer SG Mobile** app allows users to interact with the following fo
    
 3. A generic mobile client for WCS and WMS services
 
-.. image:: images/ogc_logo.png
+.. .. image:: images/ogc_logo.png
    :align: center  
    :target: http://www.opengeospatial.org/
    :alt: Open Geospatial Consortium logo
@@ -47,7 +48,7 @@ The **EarthServer SG Mobile** app allows users to interact with the following fo
 
 4. A repository browser of atmospheric data coming from the ESA MERIS spectrometer
    
-.. image:: images/meris.png
+.. .. image:: images/meris.png
    :align: center  
    :target: https://earth.esa.int
    :alt: esa MERIS data logo
@@ -67,13 +68,13 @@ To install EarthServer SG Mobile on your devices simply download the app from th
    :align: middle 
    :target: PLAY_
    :alt: EarthServer SG Mobile logo
-   :scale: 100%
+   :scale: 80%
 
 .. |APP-STORE| image:: images/app-store-logo.jpg
    :align: middle
    :target: ITUNES_
    :alt: EarthServer SG Mobile app store
-   :scale: 100%
+   :scale: 80%
 
 or scan one of the following QR code 
 
@@ -82,12 +83,12 @@ or scan one of the following QR code
 .. |ANDROID-QR| image:: images/android_qr.png
    :align: middle
    :alt: EarthServer SG Mobile app store
-   :scale: 80%
+   :scale: 60%
     
 .. |IOS-QR| image:: images/appstore_qr.png
    :align: middle
    :alt: EarthServer SG Mobile app store
-   :scale: 80%
+   :scale: 60%
 
 ============
 Usage
@@ -101,7 +102,7 @@ Once the application is installed on you mobile appliance, you can access the fo
    :scale: 50%
    :figclass: text    
    
-   Figure 1. Some screenshots of the MEEO and BGS WCS client.
+   Some screenshots of the MEEO and BGS WCS client.
 
 .. figure:: images/screen2.png
    :align: center
@@ -109,7 +110,7 @@ Once the application is installed on you mobile appliance, you can access the fo
    :scale: 50%
    :figclass: text    
    
-   Figure 2. Some screenshots of the generic WCS & WMS client and the MERIS browser.
+   Some screenshots of the generic WCS & WMS client and the MERIS browser.
    
 
 .. ============
