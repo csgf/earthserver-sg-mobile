@@ -20,6 +20,7 @@ install:
     - gulp 'install:android_sdk'
 
 before_script:
+    - npm install -g grunt-cli
     - gulp 'start:emulator'
     - gulp 'config:tiapp' --test
 
