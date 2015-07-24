@@ -1,5 +1,8 @@
-language: objective-c 
+nguage: objective-c
 
+notifications:
+    email:
+        - mario.torrisi@ct.infn.it
 env:
     matrix:
         - PLATFORM="ios"
@@ -11,12 +14,9 @@ before_install:
     - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
 install:
-    - npm install -g grunt-cli
-    - npm install -g titanium alloy tishadow gulp ticalabash
-    - npm install
-
-    - titanium login travisci@appcelerator.com travisci
-    - titanium sdk install latest --no-progress-bars
+    - npm install -g appcelerator titanium alloy tishadow gulp
+    - npm install gulp underscore moment gulp-util xml2js cloudinary
+    - appc ti sdk install latest --no-progress-bars
 
     - gulp 'install:android_sdk'
 
@@ -24,6 +24,6 @@ before_script:
     - gulp 'start:emulator'
     - gulp 'config:tiapp' --test
 
-script: 
+script:
     - gulp 'test:calabash'
     - gulp 'test:jasmine'
