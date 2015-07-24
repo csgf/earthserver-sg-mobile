@@ -15,7 +15,7 @@ before_install:
 
 install:
     - npm install -g appcelerator titanium alloy tishadow gulp
-    - npm install gulp underscore moment gulp-util xml2js cloudinary
+    - npm install gulp underscore moment gulp-util gulp-additional-utils xml2js cloudinary
     - appc ti sdk install latest --no-progress-bars
 
     - gulp 'install:android_sdk'
