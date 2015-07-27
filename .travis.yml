@@ -9,7 +9,6 @@ env:
         - PLATFORM="android" ANDROID_VERSION="19"
 
 before_install:
-    - sudo apt-get update -qq
     - export ANDROID_HOME=$PWD/android-sdk-macosx
     - export ANDROID_SDK=$ANDROID_HOME
     - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
