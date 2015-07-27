@@ -1,4 +1,4 @@
-language: objective-c 
+nguage: objective-c
 
 notifications:
     email:
@@ -16,10 +16,8 @@ before_install:
 
 install:
     - npm install -g titanium alloy tishadow gulp ticalabash
-    - npm install
-
-    - titanium login travisci@appcelerator.com travisci
-    - titanium sdk install 3.4.0.GA --no-progress-bars
+    - npm install gulp underscore moment gulp-util xml2js cloudinary
+    - ti sdk install 3.4.0.GA --no-progress-bars
 
     - gulp 'install:android_sdk'
 
@@ -27,6 +25,6 @@ before_script:
     - gulp 'start:emulator'
     - gulp 'config:tiapp' --test
 
-script: 
+script:
     - gulp 'test:calabash'
     - gulp 'test:jasmine'
